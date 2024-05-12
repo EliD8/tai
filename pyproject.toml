@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "tai"
+version = "0.1.0"
+description = ""
+authors = ["Eli Dumper <eli.dumper@protonmtail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+langchain = "0.1.11"
+unstructured = {version = "0.12.5", extras = ["md", "pdf"]}
+chromadb = "0.4.24"
+openai = "1.13.3"
+tiktoken = "0.6.0"
+langchain-community = "0.0.27"
+langchain-openai = "0.0.8"
+flask = "^3.0.2"
+llmsherpa = "^0.1.4"
+llama-index = "^0.10.36"
+llama-index-postprocessor-cohere-rerank = "^0.1.5"
+llama-index-vector-stores-chroma = "^0.1.8"
+ipython = "^8.24.0"
+gradio = "^4.31.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
